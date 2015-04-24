@@ -1,0 +1,12 @@
+lunes:
+-Pista de audio*
+-Imagen*
+-Video
+
+Martes:
+-Drag and drop
+-Scrum*
+-Cuentta en git
+
+Miercoles:
+-Depurador
