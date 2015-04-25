@@ -4,3 +4,7 @@
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+#$ cat .gitignore
+*.[oa]
+*~
+#www.jedit.org/users-guide/globs
