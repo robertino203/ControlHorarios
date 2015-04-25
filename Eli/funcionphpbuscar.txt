@@ -1,0 +1,26 @@
+if($datosPedido['tupla'] != FALSE)   //recorre los folios
+			{
+				$subtotal = 0.0;
+				$total = 0.0;
+				$i=0;
+				foreach ($datosPedido['tupla']->result() as $fila)
+				{
+						$folio = $fila->folio_pedido;
+						/*$datosPrenda= array(
+							'tuplas' => $this->gerente_model->obtener_prenda_model($folio)
+						);				
+						/*if($datosPrenda['tuplas'] != FALSE)  //recorre las prendas de cada folio
+						{
+							foreach ($datosPedido['tupla']->result() as $fila)
+							{
+								$subtotal[$i] = $fila->cantidad * $fila->precio;
+								//$total = $total + $subtotal;
+							}
+							for ($i=0; $i < count($subtotal) ; $i++) { 
+								$total += $subtotal[$i];
+							}
+							
+						}echo $total;
+					//$array = array('folio' => $fila->folio_pedido);
+					//$this->load->view('gerente/informe_ventas',$array);
+				}
